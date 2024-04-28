@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+    <h1>tasks:</h1>
+
+    {% for i in my_tasks %}
+        <ul>
+            <li><p>{{i}}</p></li>
+        </ul>
+    {% endfor %}
+
+    
+{% endblock %}
